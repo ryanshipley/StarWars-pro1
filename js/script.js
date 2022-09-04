@@ -18,10 +18,10 @@ function handleGetData(event){
     event.preventDefault();
 
 $.ajax(allURL).then((data) =>{
-        characterData = data;
-        render();
-        $("body").append(`<img id="photo" src="${characterData.image}"`);
-        $input.val("");
+    allData = data;
+    let randomChar = Math.floor(Math.random() * allData.length);
+    characterData = allData.find(el => el.id === randomChar);
+    console.log(characterData);
     }, (error) =>{
         console.log("ERROR");
         console.log(error);
