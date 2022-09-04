@@ -21,9 +21,20 @@ $.ajax(allURL).then((data) =>{
     allData = data;
     let randomChar = Math.floor(Math.random() * allData.length);
     characterData = allData.find(el => el.id === randomChar);
-    console.log(characterData);
+    render();
     }, (error) =>{
         console.log("ERROR");
         console.log(error);
     });
 };
+
+function render(){
+    $charName.text(characterData.name);
+    $specName.text(characterData.species);
+    $height.text(characterData.height);
+    $mass.text(characterData.mass);
+    $birthYear.text(characterData.born);
+    $homeWorld.text(characterData.homeworld);
+    $eyeColor.text(characterData.eyeColor);
+    $affiliations.text(characterData.affiliations);
+}
