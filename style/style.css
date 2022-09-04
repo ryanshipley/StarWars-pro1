@@ -18,10 +18,19 @@ h1{
     text-align: center;
 }
 
+form{
+    text-align: center;
+}
+
 .character-card{
     position: absolute;
-    background: white;
-    left: 1000x;
+    color: yellow;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    left: 750px;
     right: 25px;
     width: 200px;
+    border: 3px solid black;
+    border-radius: 5px;
+    height: 600px;
+    overflow: hidden;
 }

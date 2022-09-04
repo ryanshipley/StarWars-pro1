@@ -43,4 +43,6 @@ function render(){
 function changeImage(){
     document.getElementById("photo").src = characterData.image;
     document.getElementById("photo").alt = characterData.name;
- }
+ };
+
+ 
