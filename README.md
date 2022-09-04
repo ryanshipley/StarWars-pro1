@@ -7,3 +7,7 @@
 * JavaScript
 * jQuery
 * Star Wars API
+
+## Screenshots
+![title](images/DB-title.png)
+![body](images/DB-Body.png)
