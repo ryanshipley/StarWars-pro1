@@ -14,3 +14,7 @@
 
 ## Check it out!
 Check the website [here](https://ryanshipley.github.io/StarWars-pro1/)
+
+## Future Enhancements
+* Wider array of characters + starships, planets, and others
+* Nav bar to move from section to section and organization
