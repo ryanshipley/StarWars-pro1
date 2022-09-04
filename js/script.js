@@ -1,1 +1,1 @@
-console.log("hello");
+const URL = "https://akabab.github.io/starwars-api/api/id/";
