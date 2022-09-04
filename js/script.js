@@ -1,4 +1,4 @@
-const URL = "https://akabab.github.io/starwars-api/api/id/";
+const allURL = "https://akabab.github.io/starwars-api/api/all.json"; //Instatiates the URL variable.
 
 const $input = $(`input[type="text"]`);
 const $form = $("form");
@@ -8,15 +8,16 @@ const $height = $("#height");
 const $mass = $("#mass");
 const $birthYear = $("#birthYear");
 const $homeWorld = $("#homeWorld");
+const $eyeColor = $("#eyeColor");
+const $affiliations = $("#affiliations");
 
 $form.on("submit", handleGetData);
 let characterData;
 
 function handleGetData(event){
     event.preventDefault();
-    userInput = $input.val();
-    if(userInput === "") return;
-$.ajax(URL + 1 + ".json").then((data) =>{
+
+$.ajax(allURL).then((data) =>{
         characterData = data;
         render();
         $("body").append(`<img id="photo" src="${characterData.image}"`);
