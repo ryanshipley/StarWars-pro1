@@ -1,7 +1,7 @@
 const allURL = "https://akabab.github.io/starwars-api/api/all.json"; //Instatiates the URL variable.
 
 const $input = $(`input[type="text"]`);
-const $form = $("form");
+const $doIt = $("#do-it");
 const $charName = $("#charName");
 const $specName = $("#specName");
 const $height = $("#height");
@@ -11,7 +11,7 @@ const $homeWorld = $("#homeWorld");
 const $eyeColor = $("#eyeColor");
 const $affiliations = $("#affiliations");
 
-$form.on("submit", handleGetData);
+$doIt.on("click", handleGetData);
 let characterData;
 
 function handleGetData(event){
