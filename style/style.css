@@ -2,3 +2,18 @@ body{
     background-image: url(https://thumbs.gfycat.com/FeistyJaggedBuffalo-size_restricted.gif);
     background-repeat: repeat;
 }
+
+#title{
+    text-align: center;
+    color: yellow;
+    background-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 10px;
+    height: 100px;
+    font-size: 50px;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
