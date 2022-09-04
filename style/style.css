@@ -17,3 +17,11 @@ h1{
     color: white;
     text-align: center;
 }
+
+.character-card{
+    position: absolute;
+    background: white;
+    left: 1000x;
+    right: 25px;
+    width: 200px;
+}
