@@ -21,7 +21,7 @@ form{
     text-align: center;
 }
 
-.character-card{
+#card{
     position: absolute;
     color: yellow;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;

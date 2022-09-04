@@ -23,6 +23,7 @@ $.ajax(allURL).then((data) =>{
     characterData = allData.find(el => el.id === randomChar);
     render();
     changeImage();
+    textCrawl();
     }, (error) =>{
         console.log("ERROR");
         console.log(error);
@@ -45,4 +46,15 @@ function changeImage(){
     document.getElementById("photo").alt = characterData.name;
  };
 
- 
+ function textCrawl(){
+    $("#card").css({
+        "height": "100%",
+        "text-align": "center",
+        "-moz-transform": "translateY(100%)",
+        "webkit-transform": "translateY(100%)",
+        "transform": "translateY(100%)",
+        "-moz-animation": "my-animation 30s linear infinite",
+        "-webkit-animation": "my-animation 30s linear infinite",
+        "animation": "my-animation 30s linear infinite",
+    })
+}
