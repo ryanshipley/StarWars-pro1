@@ -9,3 +9,7 @@ const $mass = $("#mass");
 const $birthYear = $("#birthYear");
 const $homeWorld = $("#homeWorld");
 
+$.ajax(URL + 1 + ".json").then((data) =>{
+    characterData = data;
+    console.log(characterData);
+});
