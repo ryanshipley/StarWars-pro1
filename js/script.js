@@ -22,6 +22,7 @@ $.ajax(allURL).then((data) =>{
     let randomChar = Math.floor(Math.random() * allData.length);
     characterData = allData.find(el => el.id === randomChar);
     render();
+    changeImage();
     }, (error) =>{
         console.log("ERROR");
         console.log(error);
@@ -37,4 +38,9 @@ function render(){
     $homeWorld.text(characterData.homeworld);
     $eyeColor.text(characterData.eyeColor);
     $affiliations.text(characterData.affiliations);
-}
+};
+
+function changeImage(){
+    document.getElementById("photo").src = characterData.image;
+    document.getElementById("photo").alt = characterData.name;
+ }
